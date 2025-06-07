@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Page with Rows and Columns</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .row {
+      display: flex;
+      flex: 1; /* Each row takes 50% of the height */
+    }
+
+    .column {
+      flex: 1; /* Each column takes 50% of the width */
+      height: 100%; /* Ensures the columns stretch fully */
+    }
+
+    .frame1 {
+      background-color: #ff6666; /* Red */
+    }
+
+    .frame2 {
+      background-color: #66ff66; /* Green */
+    }
+
+    .frame3 {
+      background-color: #6666ff; /* Blue */
+    }
+
+    .frame4 {
+      background-color: #ffff66; /* Yellow */
+    }
+  </style>
+</head>
+<body>
+  <div class="row">
+    <div class="column frame1"></div>
+    <div class="column frame2"></div>
+  </div>
+  <div class="row">
+    <div class="column frame3"></div>
+    <div class="column frame4"></div>
+  </div>
+</body>
+</html>
